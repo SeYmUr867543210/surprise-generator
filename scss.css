@@ -1,0 +1,73 @@
+.gifts {
+    width: 150px;
+    height: 50px;
+
+    border: 3px solid black;
+    border-radius: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#houseGifts {
+    line-height: 50px;
+    color: white;
+}
+#compTelGifts {
+    line-height: 50px;
+}
+#circle {
+    width: 50px;
+    height: 50px;
+
+    left: 5px;
+    top: 8px;
+
+    border: 3px solid black;
+    border-radius: 200px;
+    background: #CD2127;
+
+    position: absolute;
+}
+
+
+.surprisesParent {
+    width: 915px;
+    height: 900px;
+
+    /* margin: 0 auto; */
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* border: 1px solid black; */
+}
+.wrapper {
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 250px;
+    height: 250px;
+}
+.boxPic {
+    width: 100%;
+    height: 100%; 
+    
+    background: center / contain no-repeat url(/imgs/box.png) #fc0;
+}
+.imgs {
+    
+    /* padding-top: 45px;
+    width: 100%;
+    height: 65%;
+    object-fit: cover; */
+
+
+
+
+    /* width: 100%;
+    height: 100%;
+    background: center / contain no-repeat url(/imgs/compTelGifts/airPods.png) green; */
+
+    /* border: 1px solid black; */
+}
