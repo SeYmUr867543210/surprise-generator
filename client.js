@@ -47,10 +47,10 @@ function showGift(event) {
         let giftName = compTelArr[event.target.getAttribute("count")];
 
         if (!giftName) { //esli v korobke pusto
-            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(/imgs/sadHappySmiles/sad2.jpg) white;opacity: 1;`
+            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(imgs/sadHappySmiles/sad2.jpg) white;opacity: 1;`
             hideSadSmile(imgs[event.target.getAttribute("count")])
         } else {//esli v koropke podarok
-            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(/imgs/compTelGifts/${giftName}.png) white;opacity: 1;`
+            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(imgs/compTelGifts/${giftName}.png) white;opacity: 1;`
 
             //PERENESTI KARTINKU V PRAVYY VERHNIY UGOL I UMENSHIT EE
             replaceAndResizeImg("compTel", giftName, imgs[event.target.getAttribute("count")])
@@ -59,10 +59,10 @@ function showGift(event) {
         let giftName = domBytArr[event.target.getAttribute("count")];
 
         if (!giftName) { //esli v korobke pusto
-            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(/imgs/sadHappySmiles/sad2.jpg) white;opacity: 1;`
+            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(imgs/sadHappySmiles/sad2.jpg) white;opacity: 1;`
             hideSadSmile(imgs[event.target.getAttribute("count")])
         } else {//esli v koropke podarok
-            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(/imgs/domBytGifts/${giftName}.jpg) white;opacity: 1;`
+            imgs[event.target.getAttribute("count")].style = `width: 100%;height: 100%; background: center / contain no-repeat url(imgs/domBytGifts/${giftName}.jpg) white;opacity: 1;`
 
             replaceAndResizeImg("domBytTex", giftName, imgs[event.target.getAttribute("count")])
         }
@@ -101,9 +101,9 @@ function replaceAndResizeImg(chosenTechnique, giftName, event) {
 
     let wonGift = document.createElement("img");
     if (chosenTechnique == "compTel") {
-        wonGift.style = `width: ${wonGiftWidth};height: ${wonGiftHeight};left: ${wonGiftX};top: ${wonGiftY};opacity: 1;background: center / contain no-repeat url(/imgs/compTelGifts/${giftName}.png) white;position: absolute;`
+        wonGift.style = `width: ${wonGiftWidth};height: ${wonGiftHeight};left: ${wonGiftX};top: ${wonGiftY};opacity: 1;background: center / contain no-repeat url(imgs/compTelGifts/${giftName}.png) white;position: absolute;`
     } else {
-        wonGift.style = `width: ${wonGiftWidth};height: ${wonGiftHeight};left: ${wonGiftX};top: ${wonGiftY};opacity: 1;background: center / contain no-repeat url(/imgs/domBytGifts/${giftName}.jpg) white;position: absolute;`
+        wonGift.style = `width: ${wonGiftWidth};height: ${wonGiftHeight};left: ${wonGiftX};top: ${wonGiftY};opacity: 1;background: center / contain no-repeat url(imgs/domBytGifts/${giftName}.jpg) white;position: absolute;`
         console.log(wonGift)
     }
     wonGiftsParent.append(wonGift);
